@@ -1,14 +1,59 @@
-.poster {
-    height:390px;
-    background-color:#FFFFFF;
-    margin-top:10px;
-    overflow: hidden;
-}
 
-.poster img {
-    height:100%;
-}
 
 main{
-    padding-top:100px;
+    padding-top:30px;
 }
+
+body{
+    background-color: #111111;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container .jumbotron{
+    border-radius: 0; !important;
+    background-color: #000000;
+}
+
+
+.row{
+    padding-top: 20px;
+}
+
+.movie:hover{
+    filter:grayscale(100%);
+}
+
+.imgWrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.imgDescription {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    bottom: 0;
+    left: 15%;
+    right: 0;
+    color: red;
+    font-size: 1.7em;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.imgWrap:hover .imgDescription {
+     visibility: visible;
+     opacity: 1;
+ }
+
+.imgWrap:hover .movie {
+    filter:  opacity(50%);
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: black;
+}
+
