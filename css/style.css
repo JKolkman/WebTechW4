@@ -53,6 +53,9 @@ body{
     filter:  opacity(50%);
 }
 
+.imgMovie{
+    width: 50%;
+}
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
     background-color: black;
 }
